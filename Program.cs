@@ -96,18 +96,15 @@ class Menu
                     break;
                 case 9:
                     Console.WriteLine("Zamykanie programu..");
-                    Console.ReadLine();
                     break;
                 default:
                     Console.WriteLine("Wpisz numer od 1 do 9");
-                    Console.ReadLine();
                     break;
             }
 
             Console.WriteLine();
 
         } while (choice != 9);
-
         Console.ReadLine();
     }
 }
@@ -351,7 +348,5 @@ class Biblioteka
             Console.WriteLine("{0}. Imię: {1}\n Nazwisko: {2}\n Numer telefonu: {3}\n Data wypożyczenia: {4}\n Data zwrotu: {5}",
                 i + 1, wypożyczający[i].imię, wypożyczający[i].nazwisko, wypożyczający[i].numerTel, wypożyczający[i].dataWypo, wypożyczający[i].dataZwrotu);
         }
-        Console.WriteLine("Nie znaleziono żadnych wypożyczających");
-        Console.ReadLine();
     }
 }
